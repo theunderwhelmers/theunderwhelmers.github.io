@@ -1,12 +1,198 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Underwhelming, eh?</title>
-	</head>
-	<body>
 
-		<h1>Welcome to our website</h1>
-		<p>There isn't much yet.</p>
-		<p>There will be, though.</p>
-	</body> 
+	<html lang="en">
+
+	<head>
+	
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=10, user-scalable=yes">
+		<script src="_js/maguire_a2.js"></script>
+		<meta charset="utf-8">
+		<title>The Underwhelmers | MNRMG | Published by Jacob</title>
+
+	</head>
+	
+	<body>
+	
+		<!-- Jacob Maguire
+			index.html
+			TheUnderwhelmers
+			Jack
+			4/1/19
+		-->
+
+		<div data-role="page" id="mainPage" data-theme="a" data-title="The Underwhelmers | MNRMG | Published by Jacob">
+
+			<div data-role="header" data-position="fixed">
+				<a href="../default.html" data-icon="bars">Home</a>
+				<h1>The Underwhelmers Homepage</h1>
+
+			</div>
+
+			<div role="main" class="ui-content">
+				<h3>The Underwhelmers</h3>
+				<div data-role="tabs">
+					<div data-role="navbar">
+						<ul>
+							<li><a href="#tab1">About Us</a></li>
+							<li><a href="#tab2">Projects</a></li>
+							<li><a href="#tab3">Contact Us</a></li>
+							<li><a href="#tab4">Feedback</a></li>
+						</ul>
+					</div>
+					
+					<div id="tab1">
+						Information is available for the following people:
+						<div data-role="tabs">
+							<div data-role="navbar">
+						
+								<ul>
+								
+									<li><a href="#Jacob">Jacob</a></li>
+									<li><a href="#Jack">Jack</a></li>
+								</ul>
+								
+							</div>
+							
+							<div id="Jacob">
+								<p>
+								<br>
+								</p>
+								<ul data-role="listview">
+									<li data-role="list-divider">Education</li>
+										<li>Papillion La-Vista High School</li>
+										<li>Metropolitan Community College</li>
+										<li>University Of Nebraska, Omaha</li>
+									<li data-role="list-divider">Hobbies</li>
+										<li>Programming</li>
+										<li>Making YouTube Videos</li>
+										<li>Woodworking</li>
+										<li>Video Games</li>							
+								</ul>
+							</div>
+							
+							<div id="Jack">
+								<p>
+								<br>
+								</p>
+								<ul data-role="listview">
+									<li data-role="list-divider">Education</li>
+										<li>Papillion La-Vista High School</li>
+										<li>Metropolitan Community College</li>
+										<li>University Of Nebraska, Omaha</li>
+									<li data-role="list-divider">Hobbies</li>
+										<li>Video Games</li>
+										<li>Twitch Streaming</li>
+										<li>3D Printing</li>
+										<li><em>The</em></li>							
+								</ul>
+							</div>
+							
+						</div>
+					</div>
+					<div id="tab2">
+					<p>Sage Student Bistro is located at the Pegler Center for the Institute for the Culinary Arts at 32nd Street and Sorensen Parkway,<br> on the south end of the Metropolitan Community College Fort Omaha Campus..
+					</p>
+					<div class="mapouter" style="float:right"><div class="gmap_canvas"><iframe width="300" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=Sage%20Bistro%20MCC&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.crocothemes.net"></a></div><style>.mapouter{text-align:right;height:300px;width:300px;}.gmap_canvas {overflow:hidden;background:none!important;height:300px;width:300px;}</style></div>
+					</div>
+					
+					<div id="tab3">
+					<h2 style="text-align:center">To make a reservation, please fill out this form:</h2>
+					<div style="text-align:center">
+						<script type='text/javascript'  src='https://www.opentable.com/widget/reservation/loader?rid=434575&type=standard&theme=standard&iframe=true&overlay=false&domain=com&lang=en-US'></script>
+					</div>
+					</div>
+					
+					<div id="tab4">
+					<h3 style="text-align:center" >Bistro Customer Survey</h3>
+
+            <form action="http://student.mccinfo.net/~jamaguire/info2439/module4/bistrosurvey_insert.php" method="POST">
+                <div data-role="content" class="ui-content" role="main">
+
+					<label for="meal_rate" class="ui-select" style="text-align:center">How would you rate your meal today?</label>
+
+					<div class="ui-field-contain">
+						<select name="meal_rate" id="meal_rate">
+							
+							<option value="1 - Poor">1-Poor</option>
+							<option value="2 - Needs Work">2-Needs Work</option>
+							<option value="3 - Fair">3-Fair</option>
+							<option value="4 - Good">4-Good</option>
+							<option value="5 - Excellent">5-Excellent</option>
+							
+						</select>
+					</div>
+					
+					<label for="service_rate" style="text-align:center" class="ui-select">How would you rate your service today?</label>
+
+					<div class="ui-field-contain">
+						<select name="service_rate" id="service_rate">
+
+								<option value="1-Poor">1 - Poor</option>
+								<option value="2-Needs Work">2 - Needs Work</option>
+								<option value="3-Fair">3 - Fair</option>
+								<option value="4-Good">4 - Good</option>
+								<option value="5-Excellent">5 - Excellent</option>
+								
+						</select>
+					</div>
+					
+					<label for="overall_exp" style="text-align:center" class="ui-select">How would you rate your overall experience today?</label>
+
+					<div class="ui-field-contain">
+						<select name="overall_exp" id="overall_exp">
+
+							<option value="1-Poor">1 - Poor</option>
+							<option value="2-Needs Work">2 - Needs Work</option>
+							<option value="3-Fair">3 - Fair</option>
+							<option value="4-Good">4 - Good</option>
+							<option value="5-Excellent">5 - Excellent</option>
+
+						</select>
+					</div>
+
+					<fieldset><legend style="text-align:center" >Would you recommend this restaurant to a friend?</legend>
+					
+						<div class="ui-field-contain">
+							
+							<div class="ui-radio"><label for="yes" style="text-align:center">Yes</label><input type="radio" name="recommend_rest" id="yes" value="Yes"></div>
+							
+							<div class="ui-radio"><label for="no" style="text-align:center">No</label><input type="radio" name="recommend_rest" id="no" value="No"></div>
+							
+						</div>
+					</fieldset>
+
+					<label for="bname">Name:</label>
+					<div><input type="text" name="bname" id="bname" value=""></div>
+					<label for="email">Email:</label>
+					<div><input type="text" name="email" id="email" value=""></div>
+					<div><input type="submit" value="Send" data-disabled="false"></div>
+					
+				</div>
+			</form>
+					</div>
+					
+					<div id="tab5">
+					
+					</div>
+					
+				</div>
+								
+			</div>
+
+			<div data-role="footer" data-position="fixed">
+				
+				<h4>Created By: <a href="mailto:jamaguire@mail.mccneb.edu">Jacob Maguire</a></h4>
+
+			</div>
+
+		</div>
+		
+
+
+
+	</body>
+
 </html>
